@@ -1,0 +1,13 @@
+[Unit]
+Description=openresty
+After=network.target
+  
+[Service]
+Type=forking
+ExecStart=/usr/local/openresty/bin/openresty -p /root/WWW/ORServer
+ExecReload=/usr/local/openresty/bin/openresty -p /root/WWW/ORServer -s reload
+ExecStop=/usr/local/openresty/bin/openresty -p /root/WWW/ORServer -s stop
+PrivateTmp=true
+  
+[Install]
+WantedBy=multi-user.target
