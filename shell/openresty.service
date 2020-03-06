@@ -4,9 +4,9 @@ After=network.target
   
 [Service]
 Type=forking
-ExecStart=/usr/local/openresty/bin/openresty -p /root/WWW/ORServer
-ExecReload=/usr/local/openresty/bin/openresty -p /root/WWW/ORServer -s reload
-ExecStop=/usr/local/openresty/bin/openresty -p /root/WWW/ORServer -s stop
+ExecStart=/usr/local/openresty/bin/openresty -p /root/WWW/ORserver
+ExecReload=/usr/local/openresty/bin/openresty -p /root/WWW/ORserver -s reload
+ExecStop=/usr/local/openresty/bin/openresty -p /root/WWW/ORserver -s stop
 PrivateTmp=true
   
 [Install]
