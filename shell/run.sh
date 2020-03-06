@@ -1,5 +1,5 @@
-scp ./shell/post-receive root@101.133.226.217:/root/Repos/ORServer/hooks/
-scp ./shell/openresty.service root@101.133.226.217:/usr/lib/systemd/system/
+scp ./post-receive root@101.133.226.217:/root/Repos/ORServer/hooks/
+scp ./openresty.service root@101.133.226.217:/usr/lib/systemd/system/
 ssh root@101.133.226.217 chmod a+x /root/Repos/ORServer/hooks/post-receive
 ssh root@101.133.226.217 systemctl enable openresty.service
 
